@@ -1,6 +1,6 @@
 // #include "Enemy.h"
-#include "settings.h"
 #include "Hero.h"
+#include "settings.h"
 struct Item
 {
     int id;
@@ -340,7 +340,7 @@ int main()
         window.clear(sf::Color::Black);
 
         draw_map(&window, textures, maparray, map_width, map_height, hero.x, hero.y);
-        draw_char(&window, textures);
+        hero.draw(&window, textures);
 
         // end the current frame
         window.display();

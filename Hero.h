@@ -10,6 +10,6 @@ public:
     float y;
     Hero();    //Constructor prototype
     ~Hero();   //Destructor prototype
-    //void draw(sf::RenderWindow * window, sf::Texture textures[numberOfTextures]);
+    void draw(sf::RenderWindow * window, sf::Texture textures[numberOfTextures]);
 };
 #endif
